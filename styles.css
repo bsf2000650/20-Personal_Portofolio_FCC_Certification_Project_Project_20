@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header{
+    background-color: brown;
+    color: white;
+    /* height: 50px; */
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+header nav ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+header nav ul li{
+    list-style-type: none;
+    margin: 20px 25px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    text-align: center;
+}
+.introduction ,footer{
+    background: linear-gradient(50deg, black,gray
+    );
+    color: white;
+    height: 770px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 60px;
+}
+.introduction p, footer p{
+    font-style: italic;
+    font-size: 40px;
+    font-weight: 20;
+    color: rgb(98, 11, 11);
+}
+.projects-details{
+    background-color: rgba(45, 7, 70, 0.775);
+    /* height: 1200px; */
+}
+.projects-header{
+    /* border: 2px solid white; */
+    color: white;
+    /* text-align: center; */
+    /* text-decoration: underline; */
+    font-weight: 100;
+    font-size: 40px;
+    /* border-bottom: 2px solid white; */
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+.projects{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin: 0 40px;
+}
+.projects img{
+    /* border: 2px solid white; */
+    width: 100%;
+    height: 341px;
+    object-fit: cover;
+    margin-bottom: 0px;
+    border-radius: 10px 10px 0 0;
+}
+p{
+    /* background-color: rgb(34, 34, 87); */
+    padding: 8px 0;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.projects a, button{
+    background-color: rgb(54, 2, 75);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px (rgb(50,50,50/50%));
+}
+.code{
+    color: gray;
+    transition: color 0.3s ease-out;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    padding: 10px 20px;
+    background-color: rgb(54, 2, 75);
+    color: white;
+    border: none;
+    margin: 50px auto;
+}
+footer{
+    background-color: gray;
+}
+footer p{
+    text-align: center;
+    font-size: 25px;
+    font-weight: lighter;
+    color: white;
+}
+footer ul{
+    display: flex;
+    flex-direction: row;
+}
+footer li{
+    list-style-type: none;
+    margin: 0 10px;
+}
+i{
+    margin-right: 5px;
+}
+footer hr{
+    background-color: brown;
+    width: 100%;
+    height: 5px;
+    margin-top: 150px;
+    border: none;
+}
+/* .further-details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+} */
+.contact li:hover{
+    transition: transform 0.3s ease-out;
+}
+@media screen and (max-width: 500px){
+    header nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header nav ul li{
+        margin: 5px;
+    }
+    .projects{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin: 0 40px;
+    }
+    footer h1{
+        font-size: 50px;
+        text-align: center;
+    }
+    footer ul{
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid white; */
+    }
+    footer ul li{
+        margin: 10px 0;
+    }
+}
+
+@media screen and  (max-width: 850px){
+    .projects{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+        margin: 0 40px;
+    }
+}
